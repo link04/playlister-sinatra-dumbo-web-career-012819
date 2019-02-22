@@ -101,3 +101,11 @@ body {
     width: 100%;
   }
 }
+
+.ol-size {
+  max-width: 200px;
+min-width:200px;
+background:lightgray;
+display:inline-block;
+vertical-align: top;
+}

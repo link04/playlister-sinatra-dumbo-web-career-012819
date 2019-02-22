@@ -1,0 +1,20 @@
+<div class="" style="text-align:center;">
+  <h2><%= @artist.name %></h2>
+  <hr>
+  <div class="ol-size" style="float:rightcolumn">
+    <h3>Songs</h3>
+    <ol>
+      <% @artist.songs.each do |song| %>
+      <li><a href="/song/<%= song.id %>" > <%= song.name %></a> </li>
+      <% end %>
+    </ol>
+  </div>
+  <div class="ol-size" style="float:rightcolumn">
+    <h3>Genres</h3>
+    <ol >
+      <% @artist.genres.each do |genre| %>
+      <li><a href="/genre/<%= genre.id %>"><%= genre.name %></a> </li>
+      <% end %>
+    </ol>
+  </div>
+</div>

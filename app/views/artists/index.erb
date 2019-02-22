@@ -1,13 +1,13 @@
 
   <% if @artists.count > 0 %>
 <h2>All the artists.</h2>
-<ul>
+<ol>
     <% @artists.each do |artist| %>
   <li>
-    <%= artist %>
+    <a href="/show/<%= artist.slug %>"><%= artist.name %></a>
   </li>
     <% end %>
-</ul>
+</ol>
   <% else %>
 <h2>No artists found yet.</h2>
   <% end %>
